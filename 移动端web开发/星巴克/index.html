@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #nav{
+            width: 100%;
+            height: 100px;
+            color:rgb(112, 112, 112);
+        }
+        #left{
+            width: 532px;
+            height: 100px;
+            /*background: #ff0000;*/
+            margin: 0 15px;
+            float: left;
+            position: relative;
+        }
+        #center{
+            width: 225px;
+            height: 70px;
+            /*background: greenyellow;*/
+            float: left;
+            margin: 15px 0;
+        }
+       #center #logo{
+            width: 73px;
+            height: 73px;
+            margin: 0 auto;
+            display: block;
+
+        }
+        #right{
+            width: 532px;
+            height: 100px;
+            margin: 0 15px;
+            /*background: #ffff00;*/
+            right: -5px;
+            position: absolute;
+        }
+
+       #left1{
+            width: 536px;
+            height: 46px;
+            /*background: greenyellow;*/
+           display: block;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           margin-top: -23px;
+           margin-left:-268px;
+        }
+        #menuImg{
+            width: 30px;
+            height: 20px;
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        #three span {
+            display: block;
+            font-size: 12px;
+            letter-spacing: 1px;
+            width: 40px;
+            height: 21px;
+            margin-left: 7px;
+            cursor: pointer;
+        }
+        #star {
+            width: 80px;
+            height: 20px;
+            float: right;
+            color: #4e4e4e;
+            margin-top: 30px;
+        }
+        #zhuce{
+            float: right;
+            clear: both;
+            text-decoration: none;
+            cursor: pointer;
+            color: #b89f7a;
+            font-weight: 700;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+
+        #or{
+            float: right;
+        }
+        #log{
+            float: right;
+            text-decoration: none;
+            cursor: pointer;
+            color: #b89f7a;
+            font-weight: 700;
+            font-size: 14px;
+            margin-right: 5px;
+
+        }
+        #img2 img{
+            width: 100%;
+            height: 675px;
+            display: block;
+        }
+        #ad{
+            background: #47474A;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 12px;
+            font-weight: 900;
+            right: 32px;
+            padding: 0px 5px;
+            position: absolute;
+            top: 120px;
+            width: 24px;
+            height: 21px;
+        }
+        #knowMore span{
+            display: block;
+            position: absolute;
+            font-size: 18px;
+            right: 25px;
+            bottom: -420px;
+            text-align: center;
+            top: auto;
+            color: #FFF;
+        }
+        #black{
+            width: 100%;
+            height: 220px;
+            background: #0F0F0F;
+
+        }
+        #reward{
+            width: 1140px;
+            height: 220px;
+            margin: 0 90px;
+            padding: 0 15px;
+
+        }
+        .reward-left{
+            width: 260px;
+            height: 220px;
+            padding-left: 90px;
+            background: url("img/rewards_bg.png") no-repeat;
+            background-size: contain;
+            margin-left: 180px;
+            position: relative;
+            /*background: #ff0000;*/
+
+        }
+        .reward-left p{
+            color: #FFFFFF;
+            width: 260px;
+            height: 28px;
+            font-size: 18px;
+            margin-top: 80px;
+            position: absolute;
+        }
+        .reward-logo img{
+            width: 160px;
+            height: 39px;
+            margin-top:105px;
+        }
+        .reward-right{
+            width: 430px;
+            height: 220px;
+            /*background: #ffff00;*/
+            margin-top: -220px;
+            margin-left: 530px;
+        }
+        .reward-p1{
+            color: #FFFFFF;
+            font-size:25px ;
+            margin-top: 40px;
+        }
+        .reward-p2{
+            color: #FFFFFF;
+            font-size: 16px;
+        }
+        .reward-btns{
+            width: 30px;
+            height: 18px;
+            padding: 14px 40px;
+            border: 2px solid #a98e67;
+            /*margin-top: 20px;*/
+            margin-top: 7px;
+           margin-bottom: 7px;
+           margin-right: 14px;
+            color: #a98e67;
+            text-align: center;
+            text-decoration: none;
+            line-height: 18px;
+            font-size: 14px;
+        }
+        .reward-btn{
+            margin-top: 30px;
+        }
+        .reward-btn-more{
+            color: #a98e67;
+            font-size: 14px;
+            text-decoration: none;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+        .phone{
+            width: 100%;
+            height: 220px;
+            background-image:url("img/app_bg (1).gif") ;
+        }
+        .app-device img{
+            width: 350px;
+            height: 200px;
+            /*margin-top: 20px;*/
+        }
+        #load{
+            width: 242px;
+            height: 209px;
+            margin-left: 520px;
+            margin-right: 30px;
+            margin-top: 5px;
+        }
+        #erweima img{
+            width: 130px;
+            height: 130px;
+        }
+        /*@media (max-width: 1000px) {
+            #left{
+                width: 40%;
+                margin: 5%;
+            }
+            #center{
+                width: 10%;
+            }
+            #right{
+                width: 40%;
+                margin: 5%;
+        }
+            #img2 img{
+                width: 100%;
+            }
+        }*/
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="left">
+            <div id="left1">
+                <div id="three">
+                    <input type="image" src="img/menu_icon%20(1).svg" id="menuImg">
+                    <span id="menu">菜单</span>
+
+                </div>
+            </div>
+        </div>
+        <div id="center">
+            <img src="img/logo.svg" alt="" id="logo">
+        </div>
+        <div id="right">
+            <span id="star">星享俱乐部</span>
+            <span><a href="" id="zhuce">注册</a></span>
+            <span id="or">或</span>
+            <span><a href="" id="log">登录</a></span>
+        </div>
+    </div>
+    <div id="img2">
+        <img src="img/kv-desktop-cn-20170724152434.jpg" alt="">
+        <span id="ad">广告</span>
+        <div id="knowMore">
+            <span>了解更多&gt&gt</span>
+
+        </div>
+    </div>
+    <div id="black">
+        <div id="reward">
+            <div class="reward-left">
+                <p>星享卡</p>
+                <div class="reward-logo">
+                    <img src="img/rewards_logo_20170209.svg" alt="">
+                </div>
+            </div>
+            <div class="reward-right">
+                <p class="reward-p1">星享俱乐部</p>
+                <p class="reward-p2">开启您的星享之旅，星星越多、会员等级越高、好礼越丰富</p>
+                <div class="reward-btn">
+                    <a href=""  type="button" class="reward-btns ">注册</a>
+                    <a href=""  type="button" class="reward-btns ">登录</a>
+                    <a href="" class="reward-btn-more">了解更多&lt&lt</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="phone">
+        <div class="app-device">
+            <!--<img src="img/app_device.png" alt="">-->
+        </div>
+       <div id="load">
+           <div id="erweima">
+               <img src="img/app_qr_20170209.png" alt="">
+           </div>
+       </div>
+    </div>
+</body>
+</html>
